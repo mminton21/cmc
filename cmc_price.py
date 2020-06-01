@@ -27,17 +27,17 @@ try:
 
   change_1 = float(format(float(cpath['percent_change_1h']), '.2f'))
   if change_1 > 0:
-      print(f'The change in {sys.argv[1]} is up ${change_1} over the last hour.')
+      print(f'The change in {sys.argv[1]} is up {change_1}% over the last hour.')
   elif change_1 < 0:
-      print(f'The change in {sys.argv[1]} is down ${abs(change_1)} over the last hour.')
+      print(f'The change in {sys.argv[1]} is down {abs(change_1)}% over the last hour.')
   else:
       print(f'The price of {sys.argv[1]} has not changed in the last hour.')
 
   change_24 = float(format(float(cpath['percent_change_24h']), '.2f'))
   if change_24 > 0:
-      print(f'The change in {sys.argv[1]} is up ${change_24} over the last 24 hours.')
+      print(f'The change in {sys.argv[1]} is up {change_24}% over the last 24 hours.')
   elif change_24 < 0:
-      print(f'The change in {sys.argv[1]} is down ${abs(change_24)} over the last 24 hours.')
+      print(f'The change in {sys.argv[1]} is down {abs(change_24)}% over the last 24 hours.')
   else:
       print(f'The price of {sys.argv[1]} has not changed in the last hour.')
 
